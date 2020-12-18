@@ -1,0 +1,24 @@
+{% extends "base_layout.html" %} {% block title %}Welcome{% endblock %}
+{% block content %}
+<div class="container">
+    <h3 class="mt-5 mb-3">电影名称：沐浴之王2</h3>
+    <table class="table">
+        <thead class="thead-light">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">短评</th>
+            <th scope="col" class="text-nowrap">星级</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for i in search %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.short}}</td>
+                <td>{{i.n_star}}</td>
+            </tr>
+           {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

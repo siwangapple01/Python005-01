@@ -1,0 +1,9 @@
+appName: testApp
+
+
+CONFIG:
+  AnimalSizeMapping:
+    小: 1
+    中: 2
+    大: 3
+  AnimalSizeThreshold: 2
